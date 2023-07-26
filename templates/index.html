@@ -2,12 +2,65 @@
 <html>
 <head>
     <title>Super-Resolution Web App</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Super-Resolution Web App</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Enhanced Super Resolution GAN - Demo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                        Contact
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/rishab260/" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a class="dropdown-item" href="mailto:rishabsaini.ai@gmail.com">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a class="dropdown-item" href="https://www.instagram.com/rishab.cs/" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <a class="nav-link" href="mailto:rishabsaini.ai@gmail.com?subject=Bug%20Report">
+                <button class="btn btn-danger">Report Bugs</button>
+            </a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Enhanced Super-Resolution GAN-Demo</h1>
+                        <form action="/" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="file">Select a File</label>
+                                <input type="file" class="form-control-file" id="file" name="file">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Upload</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js scripts (for Bootstrap components that require them) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
